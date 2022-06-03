@@ -1,0 +1,76 @@
+.container{
+    display:grid;
+    grid-template-rows: 1fr 0.12fr 0.12fr 0.12fr 0.12fr 0.12fr ;
+    grid-template-columns: 1fr 1.2fr 1fr ;
+    grid-template-areas: 
+        "Topleft Main Rightside"
+        "Bottomleft Content1 Content1"
+        "Bottomleft Content2 Content2"
+        "Bottomleft Content3 Content3"
+        "Bottomleft Content4 Content4"
+        "Bottomleft Content5 Content5"
+    ;
+
+}
+h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+#Topleftsidebar{
+    grid-area: Topleft;  
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-top-style: solid;
+    border-left-style: solid;
+}
+main{
+    grid-area: Main;
+    border-right-style:solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+
+}
+#Rightsidebar{
+    grid-area: Rightside;
+    border-bottom-style: solid;
+    border-top-style:solid;
+    border-right-style: solid;
+
+}
+#Bottomleftsidebar{
+    grid-area: Bottomleft;
+    border-right-style:solid;
+    border-left-style: solid;
+
+
+}
+#content1{
+    grid-area: Content1;
+    background-color: palegoldenrod;
+    border-right-style: solid;
+}
+#content2{
+    grid-area: Content2;
+    background-color: skyblue;
+    border-right-style: solid;
+}
+#content3{
+    grid-area: Content3;
+    background-color: turquoise;
+    border-right-style: solid;
+}
+#content4{
+    grid-area: Content4;
+    background-color: aqua;
+    border-right-style: solid;
+}
+#content5{
+    grid-area: Content5;
+    background-color: purple;
+    border-right-style: solid;
+}
+main img{
+    width:300px;
+    height:300px;
+}
